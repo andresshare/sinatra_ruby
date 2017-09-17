@@ -6,15 +6,9 @@ get'/' do
     else
         "Hola #{params[:nombre]}"
     end
-<<-HTML
-<h1>formulario</h1>
-<form action="nuevo/objeto" method="post">
-<input type="text" name="verbo"></input>
-<input type="submit" value=" valid * POST"> </input>   
 
-</form>
-
-HTML
+    @nombre="ander"
+    erb: index
 
 end
 
